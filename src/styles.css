@@ -1,20 +1,11 @@
 @import "./_variables-dark.css";
+@import "./parts/_base.css";
 @import "./parts/_typography.css";
 @import "./parts/_links.css";
 @import "./parts/_misc.css";
 @import "./parts/_code.css";
+@import "./parts/_radio.css";
 
-*,
-*::before,
-*::after {
- box-sizing: border-box;
-}
-
-body {
-  background-color: var(--background-body);
-  color: var(--text-color);
-  font-family: "Whitney";
-}
 
 input,
 textarea,
@@ -39,53 +30,3 @@ input[type="submit"]:hover,
 input[type="reset"]:hover {
   background-color: var(--darker-button-base);
 }
-
-input:not([type="radio"], [type="submit"], [type="reset"]),
-textarea {
-  background-color: var(--darker-primary);
-  border-radius: var(--border-radius);
-  padding: 0.5rem;
-  outline: none;
-}
-
-
-input[type=radio] {
-  /* Add if not using autoprefixer */
-  -webkit-appearance: none;
-  /* Remove most all native  styles */
-  -moz-appearance: none;
-       appearance: none;
-  background-color: var(--form-background);
-  line-height: 1.1;
-  /* Not removed via appearance */
-  margin: 3px 6px;
-  font: inherit;
-  color: currentColor;
-  width: 1.15em;
-  height: 1.15em;
-  border: 0.15em solid currentColor;
-  border-radius: 50%;
-  display: inline-grid;
-  place-content: center;
-}
-
-input[type=radio]::before {
-  content: "";
-  width: 0.65em;
-  height: 0.65em;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--form-control-color);
-  /* Windows High Contrast Mode */
-  background-color: currentColor;
-}
-
-input[type=radio]:checked::before {
-  transform: scale(1);
-}
-/**/
-/* input[type=radio]:focus { */
-/*   outline: max(2px, 0.15em) solid currentColor; */
-/*   outline-offset: max(2px, 0.15em); */
-/* } */
