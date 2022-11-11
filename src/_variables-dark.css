@@ -8,9 +8,12 @@
   /* --darker-button-base: #4752c4; */
   --button-base: #4f545c;
   --darker-button-base: #686d73;
+  --text-muted: var(--darker-button-base);
   --link-color: #00AFF4;
   --border-radius: 3px;
+  --border: var(--darker-primary);
   --highlight: #5865f2;
   --var-color: var(--highlight);
   --border: var(--darker-primary);
+  --animation-duration: 0.1s;
 }
