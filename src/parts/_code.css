@@ -1,0 +1,30 @@
+code,
+samp,
+time {
+  background-color: var(--lighter-primary);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--darker-primary);
+  white-space: normal;
+  padding: 2.5px 5px;
+  font-size: 1em;
+}
+
+pre > code {
+  padding: 10px;
+  display: block;
+  overflow-x: auto;
+}
+
+var {
+  color: var(--var-color);
+  font-style: normal;
+  font-family: monospace;
+}
+
+kbd {
+  background: var(--lighter-primary);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  color: var(--text-main);
+  padding: 2px 4px 2px 4px;
+}

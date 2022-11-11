@@ -1,0 +1,12 @@
+{
+  "name": "discord.css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "script": {
+    "build": "node postcss.js"
+  },
+  "devDependencies": {
+    "postcss-import": "^15.0.0"
+  }
+}

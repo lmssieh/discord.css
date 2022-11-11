@@ -1,0 +1,16 @@
+:root {
+  --lighter-primary: #2f3136;
+  --primary: #36393f;
+  --darker-primary: #202225;
+  --background-body: var(--primary);  
+  --text-color: white;  
+  /* --button-base: #5865f2; */
+  /* --darker-button-base: #4752c4; */
+  --button-base: #4f545c;
+  --darker-button-base: #686d73;
+  --link-color: #00AFF4;
+  --border-radius: 3px;
+  --highlight: #5865f2;
+  --var-color: var(--highlight);
+  --border: var(--darker-primary);
+}

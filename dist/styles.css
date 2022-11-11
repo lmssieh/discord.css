@@ -1,0 +1,297 @@
+:root {
+  --lighter-primary: #2f3136;
+  --primary: #36393f;
+  --darker-primary: #202225;
+  --background-body: var(--primary);  
+  --text-color: white;  
+  /* --button-base: #5865f2; */
+  /* --darker-button-base: #4752c4; */
+  --button-base: #4f545c;
+  --darker-button-base: #686d73;
+  --link-color: #00AFF4;
+  --border-radius: 3px;
+  --highlight: #5865f2;
+  --var-color: var(--highlight);
+  --border: var(--darker-primary);
+}
+@font-face {
+  font-family: "Whitney";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://cdn.glitch.com/ec49dcb2-f55b-45c7-95be-e51f466e2cff%2Fwhitneymedium.woff?v=1610494284187")
+    format("woff");
+}
+@font-face {
+  font-family: "Whitney";
+  font-style: italic;
+  font-weight: 500;
+  src: url("https://cdn.glitch.com/ec49dcb2-f55b-45c7-95be-e51f466e2cff%2Fwhitneymediumitalic.woff?v=1610494284817")
+    format("woff");
+}
+@font-face {
+  font-family: "Whitney";
+  font-style: bold;
+  font-weight: 700;
+  src: url("https://cdn.glitch.com/ec49dcb2-f55b-45c7-95be-e51f466e2cff%2Fwhitneybold.woff?v=1610494282762")
+    format("woff");
+}
+@font-face {
+  font-family: "Whitney";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://cdn.glitch.com/ec49dcb2-f55b-45c7-95be-e51f466e2cff%2Fwhitneysemibold.woff?v=1610494285485")
+    format("woff");
+}
+@font-face {
+  font-family: "Whitney";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdn.glitch.com/ec49dcb2-f55b-45c7-95be-e51f466e2cff%2Fwhitneybook.woff?v=1610494282898")
+    format("woff");
+}
+@font-face {
+  font-family: "Whitney";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://cdn.glitch.com/ec49dcb2-f55b-45c7-95be-e51f466e2cff%2Fwhitneylight.woff?v=1610494283298")
+    format("woff");
+}
+@font-face {
+  font-family: "Whitney";
+  font-style: italic;
+  font-weight: 600;
+  src: url("https://cdn.glitch.com/ec49dcb2-f55b-45c7-95be-e51f466e2cff%2FWhitneySemiboldItalic.woff?v=1610494286027")
+    format("woff");
+}
+@font-face {
+  font-family: "Whitney";
+  font-style: italic;
+  font-weight: 400;
+  src: url("https://cdn.glitch.com/ec49dcb2-f55b-45c7-95be-e51f466e2cff%2Fwhitneybookitalic.woff?v=1610494283334")
+    format("woff");
+}
+@font-face {
+  font-family: "Whitney";
+  font-style: italic;
+  font-weight: 300;
+  src: url("https://cdn.glitch.com/ec49dcb2-f55b-45c7-95be-e51f466e2cff%2Fwhitneylightitalic.woff?v=1610494283680")
+    format("woff");
+}
+h1 {
+  font-size: 2.2em;
+  margin-top: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 12px;
+  margin-top: 24px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: var(--text-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong,
+th {
+  font-weight: 600;
+}
+q::before {
+  content: none;
+}
+q::after {
+  content: none;
+}
+blockquote,
+q {
+  border-left: 4px solid var(--button-base);
+  border-radius: var(--border-radius);
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+  font-style: italic;
+}
+blockquote > footer {
+  font-style: normal;
+  border: 0;
+}
+blockquote cite {
+  font-style: normal;
+}
+mark {
+  background-color: var(--highlight);
+  border-radius: 2px;
+  padding: 0 2px 0 2px;
+  color: var(--text-color);
+}
+a > code,
+a > strong {
+  color: inherit;
+}
+address {
+  font-style: normal;
+}
+a[href^='mailto\:']::before {
+  content: '📧 ';
+}
+a[href^='tel\:']::before {
+  content: '📞 ';
+}
+a[href^='sms\:']::before {
+  content: '💬 ';
+}
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+a:hover {
+  text-decoration: underline;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+img {
+  border-radius: var(--border-radius);
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--button-base);
+}
+::selection {
+  background-color: var(--highlight);
+  color: var(--text-color);
+}
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+  margin: 3px;
+}
+::-webkit-scrollbar-track {
+  background: var(--lighter-primary);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--darker-primary);
+  border-radius: 6px;
+}
+body > footer {
+  margin-top: 40px;
+}
+code,
+samp,
+time {
+  background-color: var(--lighter-primary);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--darker-primary);
+  white-space: normal;
+  padding: 2.5px 5px;
+  font-size: 1em;
+}
+pre > code {
+  padding: 10px;
+  display: block;
+  overflow-x: auto;
+}
+var {
+  color: var(--var-color);
+  font-style: normal;
+  font-family: monospace;
+}
+kbd {
+  background: var(--lighter-primary);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  color: var(--text-main);
+  padding: 2px 4px 2px 4px;
+}
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+}
+body {
+  background-color: var(--background-body);
+  color: var(--text-color);
+  font-family: "Whitney";
+}
+input,
+textarea,
+button {
+  font-family: inherit;
+  border: none;
+  background-color: transparent;
+  color: var(--text-color);
+}
+button,
+input[type="submit"],
+input[type="reset"] {
+  background-color: var(--button-base);
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: var(--darker-button-base);
+}
+input:not([type="radio"], [type="submit"], [type="reset"]),
+textarea {
+  background-color: var(--darker-primary);
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+  outline: none;
+}
+input[type=radio] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native  styles */
+  -moz-appearance: none;
+       appearance: none;
+  background-color: var(--form-background);
+  line-height: 1.1;
+  /* Not removed via appearance */
+  margin: 3px 6px;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  display: inline-grid;
+  place-content: center;
+}
+input[type=radio]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: currentColor;
+}
+input[type=radio]:checked::before {
+  transform: scale(1);
+}
+/**/
+/* input[type=radio]:focus { */
+/*   outline: max(2px, 0.15em) solid currentColor; */
+/*   outline-offset: max(2px, 0.15em); */
+/* } */

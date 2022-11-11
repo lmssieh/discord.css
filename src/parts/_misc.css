@@ -1,0 +1,50 @@
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  border-radius: var(--border-radius);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--button-base);
+}
+
+::selection {
+  background-color: var(--highlight);
+  color: var(--text-color);
+}
+
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+  margin: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--lighter-primary);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--darker-primary);
+  border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+body > footer {
+  margin-top: 40px;
+}
