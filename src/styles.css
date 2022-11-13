@@ -1,32 +1,8 @@
 @import "./_variables-dark.css";
 @import "./parts/_base.css";
 @import "./parts/_typography.css";
+@import "./parts/_forms.css";
 @import "./parts/_links.css";
 @import "./parts/_misc.css";
 @import "./parts/_code.css";
 @import "./parts/_radio.css";
-
-
-input,
-textarea,
-button {
-  font-family: inherit;
-  border: none;
-  background-color: transparent;
-  color: var(--text-color);
-}
-
-button,
-input[type="submit"],
-input[type="reset"] {
-  background-color: var(--button-base);
-  padding: 0.5rem;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-}
-
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-  background-color: var(--darker-button-base);
-}
